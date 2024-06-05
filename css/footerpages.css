@@ -1,0 +1,91 @@
+/* 
+CSS USATO PER
+
+C:\xampp\htdocs\WebProgramming\php\footer\assistance.php
+C:\xampp\htdocs\WebProgramming\php\footer\chisiamo.php
+C:\xampp\htdocs\WebProgramming\php\footer\comefunziona.php
+C:\xampp\htdocs\WebProgramming\php\footer\contatti.php
+C:\xampp\htdocs\WebProgramming\php\footer\cosafacciamo.php
+C:\xampp\htdocs\WebProgramming\php\footer\infoprivacy.php
+C:\xampp\htdocs\WebProgramming\php\footer\lavoraconnoi.php
+C:\xampp\htdocs\WebProgramming\php\footer\legalinfo.php
+C:\xampp\htdocs\WebProgramming\php\footer\relazioneinv.php
+C:\xampp\htdocs\WebProgramming\php\footer\termandconditions.php
+
+*/
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
+    line-height: 1.6;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+}
+
+header a {
+    color: white;
+    text-decoration: none;
+    margin: 0;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+main {
+    padding: 20px;
+}
+
+.container {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+}
+
+.home-button {
+    background-color: black;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    margin: 10px 2px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.home-button:hover {
+    background-color: #7AC27A;
+}
+

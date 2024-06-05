@@ -1,0 +1,174 @@
+/*
+CSS USATO PER
+C:\xampp\htdocs\WebProgramming\php\upload.php
+C:\xampp\htdocs\WebProgramming\php\admin.php
+C:\xampp\htdocs\WebProgramming\php\client.php
+*/
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 90%;
+    margin: auto;
+    padding: 20px;
+    background: #fff;
+    margin-top: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+input[type="text"], textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+input[type="submit"] {
+    background-color: #5cb85c;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 5%;
+}
+
+.table-container {
+    overflow-x: auto;
+    margin-bottom: 20px;
+}
+
+table {
+    margin-top: 6px;
+    width: 100%;
+    border-collapse: collapse;
+}
+
+table, th, td {
+    border: 1px solid #ddd;
+}
+
+th, td {
+    padding: 10px;
+    text-align: left;
+}
+
+.status-buttons button {
+    margin-right: 10px;
+    padding: 5px 10px;
+    border: none;
+    cursor: pointer;
+}
+
+.attesa { background-color: #f0ad4e; color: white; }
+.preparazione { background-color: #5bc0de; color: white; }
+.concluso { background-color: #5cb85c; color: white; }
+.delete { background-color: #d9534f; color: white; }
+
+.attesa:hover {
+    background-color: #c98d2c;
+}
+
+.preparazione:hover {
+    background-color: #2c92c9;
+}
+
+.concluso:hover {
+    background-color: #3f9b25;
+}
+
+.delete:hover {
+    background-color: #c9302c;
+}
+
+.status {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #ddd;
+    border-radius: 5px;
+}
+
+.logout-button {
+    background-color: #5cb85c;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    margin: 10px 2px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.logout-button:hover {
+    background-color: #7AC27A;
+}
+
+/* Media query for mobile devices */
+@media (max-width: 390px) {
+    .container {
+        width: 95%;
+        margin-top: 10px;
+        padding: 10px;
+    }
+
+    input[type="submit"], .logout-button {
+        width: 100%;
+        margin-top: 10px;
+    }
+
+    .status-buttons button {
+        width: 100%;
+        margin-top: 5px;
+    }
+
+    th, td {
+        padding: 8px;
+    }
+
+    .table-container {
+        overflow-x: auto;
+    }
+
+    table {
+        display: block;
+        white-space: nowrap;
+    }
+
+    table, th, td {
+        display: block;
+    }
+
+    thead {
+        display: none;
+    }
+
+    tr {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 10px;
+    }
+
+    td {
+        text-align: right;
+        padding-left: 50%;
+        position: relative;
+    }
+
+    td::before {
+        content: attr(data-label);
+        position: absolute;
+        left: 10px;
+        width: calc(50% - 20px);
+        text-align: left;
+        font-weight: bold;
+    }
+}

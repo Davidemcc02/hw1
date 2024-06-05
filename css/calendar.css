@@ -1,0 +1,101 @@
+
+/*
+CSS USATO PER php/prenotations.php
+*/
+
+body {
+    
+    background: url("../img/calendar.jpg");
+    position: relative;
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Container for the Calendar and Form */
+#calendar, #eventForm {
+    background-color: #ffffff;
+    border: 1px solid #dddddd;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+/* Form Styles */
+#eventForm {
+    max-width: 400px;
+    width: 100%;
+}
+
+#eventForm h2 {
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #333333;
+}
+
+#eventForm label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #555555;
+}
+
+#eventForm input[type="email"], 
+#eventForm input[type="date"], 
+#eventForm select {
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #dddddd;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+#eventForm button {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 6px;
+    background-color: #007bff;
+    color: #ffffff;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-bottom: 20px;
+}
+
+#eventForm button:hover {
+    background-color: #0056b3;
+}
+
+.button_home {
+    
+    width: 100%;
+    padding: 10px;
+    margin-left: 60%;
+    background-color: #007bff;
+    color: #ffffff;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    text-decoration: none;
+   
+}
+
+.button_home:hover {
+    background-color: #0056b3;
+}
+/* Calendar Styles */
+#calendar {
+    margin-bottom: 40px;
+    max-width: 600px;
+    width: 100%;
+    display: none; /* Assuming you might want to display a calendar later */
+}
+
