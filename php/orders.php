@@ -35,7 +35,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 </head>
 <body>
     <div class="container">
-        <a href="./php/upload.php" class="logout-button">Invia riparazione</a>
+        <a href="upload.php" class="logout-button">Invia riparazione</a>
         <a href="logout.php" class="logout-button">Logout</a>
         <a href="./index.php" class="logout-button">Home</a>
         <h2>Lista Ricambi</h2>
